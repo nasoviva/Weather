@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="rI1-jU-eWf">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-Ea-PVz" userLabel="1Stack View">
-                                <rect key="frame" x="20" y="40" width="280" height="40"/>
+                                <rect key="frame" x="20" y="79" width="390" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owj-N4-ot2">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -37,16 +37,16 @@
                                             <action selector="locationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q2i-vi-Nn7"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="left" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="  Search City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XsK-Bs-eDi">
-                                        <rect key="frame" x="50" y="0.0" width="180" height="40"/>
+                                    <textField opaque="NO" contentMode="left" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Search City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XsK-Bs-eDi">
+                                        <rect key="frame" x="50" y="0.0" width="290" height="40"/>
                                         <color key="backgroundColor" red="0.52156865600000002" green="0.64705884459999996" blue="0.75686275960000005" alpha="0.57952008929999999" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.84313726430000002" green="0.93725490570000003" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="textColor" red="0.84313726430000002" green="0.93725490570000003" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search" textContentType="address-level2"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMh-mW-jqv">
-                                        <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                        <rect key="frame" x="350" y="0.0" width="40" height="40"/>
                                         <color key="backgroundColor" red="0.52156865600000002" green="0.64705884459999996" blue="0.75686275960000005" alpha="0.57952008929999999" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="vYY-iF-UOD"/>
@@ -67,10 +67,10 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meD-0b-XLV" userLabel="1View">
-                                <rect key="frame" x="20" y="100" width="280" height="150"/>
+                                <rect key="frame" x="20" y="139" width="390" height="150"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Sf2-Mp-Zhs">
-                                        <rect key="frame" x="10" y="4.5" width="140" height="140.5"/>
+                                        <rect key="frame" x="10" y="5" width="140" height="140"/>
                                         <color key="tintColor" red="0.84313726430000002" green="0.93725490570000003" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="Avj-Lv-C8P"/>
@@ -78,9 +78,9 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-ec-Ose">
-                                        <rect key="frame" x="130" y="15" width="140" height="120"/>
+                                        <rect key="frame" x="240" y="15" width="140" height="120"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+16" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-Y4-3Sf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-Y4-3Sf">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="cZT-A3-1S4"/>
@@ -114,10 +114,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wh6-2r-Pqw" userLabel="2View">
-                                <rect key="frame" x="20" y="250" width="280" height="70"/>
+                                <rect key="frame" x="20" y="289" width="390" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="y7q-z0-Fgl">
-                                        <rect key="frame" x="10" y="5" width="260" height="60"/>
+                                        <rect key="frame" x="10" y="5" width="370" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="IHA-PE-WiY"/>
                                         </constraints>
@@ -155,10 +155,10 @@
                     </view>
                     <connections>
                         <outlet property="city" destination="y7q-z0-Fgl" id="HhL-D2-3Fr"/>
-                        <outlet property="conditionName" destination="C7f-5s-EAJ" id="mRj-2g-5GX"/>
+                        <outlet property="conditionDescription" destination="C7f-5s-EAJ" id="mRj-2g-5GX"/>
                         <outlet property="imageWeather" destination="Sf2-Mp-Zhs" id="WPv-9h-4xx"/>
                         <outlet property="searchTextField" destination="XsK-Bs-eDi" id="bOQ-pp-DA4"/>
-                        <outlet property="temperature" destination="C7f-5s-EAJ" id="pCx-Y0-RCC"/>
+                        <outlet property="temperature" destination="D4T-Y4-3Sf" id="vLA-xe-eYZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -167,7 +167,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="341" height="341"/>
+        <image name="Image" width="341.33334350585938" height="341.33334350585938"/>
         <image name="location" catalog="system" width="128" height="119"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="sun.max.fill" catalog="system" width="128" height="125"/>

@@ -14,8 +14,13 @@ struct WeatherModel {
     let condition: String
 
     var temperatureString: String {
-            return String(format: "%.0f", temperature)
+        if temperature > 0 {
+            return String(format: "+%.0f", temperature)
+        } else if temperature < 0{
+            return String(format: "-%.0f", temperature)
         }
+        return String(format: "%.0f", temperature)
+    }
 
     var conditionName: String {
         switch conditionID {
