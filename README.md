@@ -5,5 +5,5 @@
 <p align="center">A Weather app is a practical project that provide users with current weather information.<br>It taught me efficient external API communication, HTTP request handling, and JSON parsing for weather data extraction.</p>
 <br>
 <div align="center">
-    ![Record.mp4](https://github.com/nasoviva/Weather/blob/Record.mp4)
+    <img src="https://github.com/nasoviva/Weather/blob/main/Main" alt="Описание изображения" width="300"/>
 </div>
